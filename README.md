@@ -1,5 +1,3 @@
-![Image](https://github.com/LordKayaba/SaveDataSecurity/blob/Develop/SaveData/Icons/Icon.png)
-
 # Save Data Security
 This package is designed for managing data storage
 and retrieval in Unity. It contains static methods
@@ -42,3 +40,5 @@ MyObjectType loadedData = SD.Load<MyObjectType>("myKey");
 MyObjectType myObject = new MyObjectType();
 SD.Save("myKey", myObject);
 ```
+
+![Image](https://github.com/LordKayaba/SaveDataSecurity/blob/Develop/SaveData/Icons/Icon.png)
