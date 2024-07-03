@@ -1,1 +1,2 @@
-این یک `کد درون خطی` است.
+```javascript
+console.log('Hello, world!');
