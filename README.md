@@ -1,12 +1,16 @@
+# Save Data Security
+This package is designed for managing data storage
+and retrieval in Unity. It contains static methods
+that provide functionality for saving, loading,
+deleting, and editing data using various
+encryption techniques.
 
-### مراحل بعدی
-1. **ایجاد فایل:** فایل جدیدی به نام `README.md` در ریشه پروژه خود ایجاد کنید.
-2. **کپی محتوا:** محتوای بالا را در فایل `README.md` کپی کنید.
-3. **ذخیره و افزودن به مخزن گیت:** فایل را ذخیره کنید و سپس به مخزن گیت خود اضافه کنید:
-    ```bash
-    git add README.md
-    git commit -m "Add README file"
-    git push origin main
-    ```
+## Static Methods:
 
-این مراحل به شما کمک می‌کند تا یک README.md جامع و مفید برای پروژه خود ایجاد کنید.
+1. `Exists(string key)`
+- Checks if data with a specific key exists.
+```csharp
+if(SD.Exists("myKey"))
+{
+    Debug.Log("Data exists!");
+}
