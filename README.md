@@ -14,3 +14,29 @@ if(SD.Exists("myKey"))
 {
     Debug.Log("Data exists!");
 }
+```
+
+2. `Delete(string key)`
+- Deletes data using the specified key.
+```csharp
+SD.Delete("myKey");
+```
+
+3. `EditKey(string CurrentKey, string NewKey)`
+- Edits the key of a data entry with a new key.
+```csharp
+SD.EditKey("oldKey", "newKey");
+```
+
+4. `Load<T>(string key)`
+- Retrieves data using the key and decrypts it.
+```csharp
+MyObjectType loadedData = SD.Load<MyObjectType>("myKey");
+```
+
+5. `Save<T>(string key, T obj)`
+- Saves data using the key and encrypts it.
+```csharp
+MyObjectType myObject = new MyObjectType();
+SD.Save("myKey", myObject);
+```
