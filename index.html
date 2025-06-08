@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Ad Display</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=125, height=125, initial-scale=1.0">
     <style>
-        body {
+        html, body {
+            width: 125px;
+            height: 125px;
             margin: 0;
             padding: 0;
+            background-color: transparent;
+            overflow: hidden;
+        }
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: transparent;
         }
     </style>
 </head>
 <body>
-<iframe data-aa='2397549' src='//ad.a-ads.com/2397549?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+    <iframe data-aa='2397549'
+            src='//ad.a-ads.com/2397549?size=125x125'
+            width='125'
+            height='125'
+            style='border:0; padding:0; margin:0; background-color: transparent; overflow: hidden;'>
+    </iframe>
 </body>
 </html>
